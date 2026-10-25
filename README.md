@@ -89,7 +89,7 @@ Reproduce with `python bench.py` (3 repeated runs of a 12-prompt test set: 4 Eng
 
 
 
-Raw data: [`results/bench_results.json`](results/bench_results.json). Screenshot: <<ADD `results/bench.png` and link it here>>
+Raw data: [`results/bench_results.json`](results/bench_results.json). 
 
 **Measured by hand (single runs):** Whisper small about 0.7 s for a short clip; end to end, from speaking to a command running, about 3 seconds.
 
