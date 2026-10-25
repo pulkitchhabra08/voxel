@@ -4,7 +4,6 @@
 
 **Track:** Narrow Agentic Tools (built to the local-inference rules) | **Team:** Pulkit Chhabra (solo) | **Event:** Hacktoberfest 26, Hack Day Jaipur, 25 Oct 2026
 
-**Demo:** <<DEMO LINK: screen recording, or write "run `python main.py` after setup">>
 
 ---
 
@@ -46,7 +45,7 @@ voice -> Whisper (stt.py) -> Qwen3 planner (planner.py) -> guard (guard.py) -> c
 | **Parameters** | 4B | 244M |
 | **Licence** | Apache-2.0 | MIT (OpenAI Whisper weights) |
 | **Runtime** | Ollama (local HTTP, `localhost:11434`) | whisper.cpp (`whisper-cli`) |
-| **Quantization** | <<QUANT: from `ollama show qwen3:4b`, e.g. Q4_K_M>> | ggml format, `ggml-small.bin` |
+| **Quantization** | quantization        Q4_K_M | ggml format, `ggml-small.bin` |
 | **Download size** | ~2.5 GB | ~466 MiB |
 
 - **Hardware tested:** MacBook Air (Apple M5, 16 GB unified memory), macOS 26.6, Python 3.13. The planner runs 100% on the GPU (`ollama ps`: about 2.9 GB loaded).
@@ -88,7 +87,7 @@ No API keys or secrets are needed. `.env.example` is included only as a placehol
 
 Reproduce with `python bench.py` (3 repeated runs of a 12-prompt test set: 4 English, 4 Hinglish, 2 confirm-first, 2 refusals). A prompt only counts as a pass if the whole chain behaves correctly: the guard verdict is right, the command matches, and safe commands actually execute. Only commands the guard marks SAFE are ever executed by the benchmark. The run below was done with Wi-Fi off.
 
-<<PASTE THE CONTENTS OF results/RESULTS.md HERE>>
+
 
 Raw data: [`results/bench_results.json`](results/bench_results.json). Screenshot: <<ADD `results/bench.png` and link it here>>
 
@@ -104,7 +103,7 @@ Raw data: [`results/bench_results.json`](results/bench_results.json). Screenshot
 
 ## Graphify Integration (link to graph) & Future Scope / Licence
 
-**Graph:** [`graphify-out/graph.html`](graphify-out/graph.html) (screenshot below) | **Shared in Discord:** yes, <<DISCORD MESSAGE LINK>> | **Licence:** MIT
+**Graph:** [`graphify-out/graph.html`](graphify-out/graph.html) (screenshot below) | **Shared in Discord:** yes, https://discord.com/channels/1496114518160441345/1562682797460693075/1563822289558966363 | **Licence:** MIT
 
 ![Graphify codebase graph of Voxel](graph.png)
 
