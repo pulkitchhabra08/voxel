@@ -105,7 +105,7 @@ Raw data: [`results/bench_results.json`](results/bench_results.json).
 
 **Graph:** [`graphify-out/graph.html`](graphify-out/graph.html) (screenshot below) | **Shared in Discord:** yes, https://discord.com/channels/1496114518160441345/1562682797460693075/1563822289558966363 | **Licence:** MIT
 
-![Graphify codebase graph of Voxel](graph.png)
+
 
 The graph (generated with `graphify extract . --code-only`) shows the pipeline as clusters: `stt.py` (`record`, `transcribe`), `planner.py` (`plan`), `guard.py` (`check`), `runner.py` (`run`) and `main.py` (`handle`).
 
