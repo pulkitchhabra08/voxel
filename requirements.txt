@@ -1,0 +1,4 @@
+requests
+sounddevice
+numpy
+rich
